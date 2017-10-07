@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<div id="container">
+		<h1>Hangman</h1>
+		<br>
+
+		<div class="content">
+			<h1>Instructions:</h1>
+			<p id="instructions">
+				Try to guess the letters of a random word. For each letter correctly guessed,
+				they will fill out the empty spaces of "Current Word" and your remaining guesses
+				won't go down. You win by correctly guessing every letter of the word. But if 
+				you run out of remaining guesses, you lose! Try your best and have fun!
+			</p>
+		</div>
+		<div class="content">
+			<h1>Guess A Letter To Get Started!</h1>
+			<p> 
+				<br><br>
+				Wins <div id="wins">0</div>
+				<br>
+				Losses <div id="losses">0</div>
+				<br>
+				Current Word <div id="currentWord"></div>
+				<br>
+				Number Of Guesses Remaining <div id="guessesLeft">5</div>
+				<br>
+				Letters Already Guessed <div id="guessedLetters"></div>
+				<br>
+				<div id="loseText"></div>
+				<div id="winText"></div>
+			</p>
+		</div>
+
+	</div>
+
+	<script src="assets/javascript/game.js">
+	</script>
+
+</body>
+</html>

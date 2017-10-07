@@ -1,0 +1,34 @@
+h1{
+	font-weight: bold;
+	font-size: 24px;
+}
+
+.content{
+	float: left;
+	width: 100%;
+	max-width: 300px;
+	height: 500px;
+	border: 3px dashed;
+	text-align: center;
+}
+
+#container {
+	width: 100%;
+	max-width: 650px;
+	text-align: center;
+	margin: 0 auto;
+	clear: both;
+}
+
+#guessedLetters{
+	max-width: 650px;
+}
+
+#instructions {
+	text-align: left;
+}
+
+#winText, #loseText {
+	font-size: 20px;
+	font-weight: bold;
+}
