@@ -29,6 +29,16 @@ h1{
 }
 
 #winText, #loseText {
-	font-size: 20px;
+	font-size: 19px;
 	font-weight: bold;
+}
+
+#currentWord{
+	letter-spacing: 2.5px;
+	word-spacing: 15px;
+
+}
+
+#imageHolder {
+	width: 150px;
 }
