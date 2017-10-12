@@ -1,15 +1,31 @@
-h1{
+h1 {
 	font-weight: bold;
 	font-size: 24px;
 }
 
-.content{
+body, html {
+	height: 100%;
+	margin: 0;
+}
+
+.bg {
+	background-image: url("");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+
+.content {
 	float: left;
 	width: 100%;
 	max-width: 300px;
 	height: 500px;
 	border: 3px dashed;
 	text-align: center;
+	background: rgba(0,0,0,1);
+
 }
 
 #container {
@@ -20,7 +36,7 @@ h1{
 	clear: both;
 }
 
-#guessedLetters{
+#guessedLetters {
 	max-width: 650px;
 }
 
@@ -33,7 +49,7 @@ h1{
 	font-weight: bold;
 }
 
-#currentWord{
+#currentWord {
 	letter-spacing: 2.5px;
 	word-spacing: 15px;
 

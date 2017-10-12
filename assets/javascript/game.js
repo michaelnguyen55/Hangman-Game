@@ -41,18 +41,13 @@ function resetGame() {
 	/*sets current word div and guesses array to be "-" times the amount of letters in the random word chosesn.*/
 	for (var i = 0; i < randomWord.length; i++) {
 		if(randomWord[i] === " ") {
-			var letter = document.createElement("text");
-			letter.innerHTML = " ";
-			document.getElementById("currentWord").appendChild(letter);
 			guesses[i] = " ";
 		}
 		else {	
-			var letter = document.createElement("text");
-			letter.innerHTML = "_";
-			document.getElementById("currentWord").appendChild(letter);
 			guesses[i] = "_";
 		}
 	}
+	document.getElementById("currentWord").innerHTML = guesses.join("");
 	grabGuessedLetters.innerHTML = currentGuesses;
 	grabGuessesLeft.innerHTML = guessesLeftCounter;
 	document.getElementById("winText").innerHTML = "";
@@ -75,8 +70,6 @@ document.onkeyup = function(event) {
 	/*Checks if the user entered a letter. The letter must not be already used and the game didn't end yet*/
 	if(alphabet.indexOf(userGuess)>-1 && currentGuesses.indexOf(userGuess) === -1 && end === false) {
 
-		document.getElementById("currentWord").innerHTML = "";
-
 		/*Change each "-" of guesses holder to a letter from randomWord if you typed a correct letter*/
 		for(var j = 0; j < randomWord.length; j++) {
 			
@@ -84,10 +77,7 @@ document.onkeyup = function(event) {
 				guesses[j] = randomWord[j];
 			}
 			/*Sets currentWord div to guesses holder*/
-			var letter = document.createElement("text");
-			letter.innerHTML = guesses[j];
-			document.getElementById("currentWord").appendChild(letter);
-
+			document.getElementById("currentWord").innerHTML = guesses.join("");
 		}
 
 		/*When you win, number of wins goes up and win text is displayed*/
