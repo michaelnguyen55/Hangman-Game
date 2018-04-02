@@ -1,9 +1,10 @@
 var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 var words = {
-	"ORANGE":["It's a color", "orange.jpg"], 
-	"TOMATO":["Rhymes with potato", "tomato.jpg"], 
-	"BANANA":["It's yellow", "banana.jpg"], 
-	"APPLE":["Keeps the doctor away", "apple.jpg"]
+	"GAMEBOY":["It's one of the first handheld gaming machines created by Nintendo", "gameboy.gif"], 
+	"KEYBOARD":["A piano and a skateboard combined", "keyboard.gif"], 
+	"VHS":["It's a rectangular object that was used to watch recorded history", "vhstape.gif"], 
+	"CAR":["Travel far in this vehicle", "car1.gif"],
+	"TELEVISION":["A magic screen that lets you see people and objects", "screen.gif"]
 };
 /*clone words array into originalWords*/
 var originalWords = Object.assign({}, words);

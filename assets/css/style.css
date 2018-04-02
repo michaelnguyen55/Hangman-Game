@@ -9,7 +9,7 @@ body, html {
 }
 
 .bg {
-	background-image: url("");
+	background-image: url("../images/bar.gif");
 	height: 100%;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -56,5 +56,6 @@ body, html {
 }
 
 #imageHolder {
+	margin-top: 40px;
 	width: 150px;
 }
